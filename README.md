@@ -9,6 +9,14 @@ Create new component:
 ```bash 
 ng g c meu-primeiro
 ```
+
+Create new module:
+```bash
+ng g m cursos
+ng g c cursos
+ng g c cursos/curso-detalhe
+```
+
 Start Server:
 ```bash 
 ng server
