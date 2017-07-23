@@ -1,3 +1,4 @@
+import { CursosService } from './cursos.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,10 +10,13 @@ export class CursosComponent implements OnInit {
 
   nomePortal: string;
 
-  cursos: string[] = ['Java', 'Ex JS', 'Angular'];
+  cursos: string[];
 
-  constructor() { 
+  constructor(private cursosService: CursosService) { 
     this.nomePortal = 'http://loaine.training';
+
+    this.cursos = cursosService.getCursos();
+
   }
 
   ngOnInit() {

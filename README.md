@@ -17,6 +17,12 @@ ng g c cursos
 ng g c cursos/curso-detalhe
 ```
 
+Create new module:
+```bash
+ng g s cursos/cursos
+```
+Obs: Dependency Injection , you need add  'providers: [CursosService]'  in ...module.ts
+
 Start Server:
 ```bash 
 ng server
