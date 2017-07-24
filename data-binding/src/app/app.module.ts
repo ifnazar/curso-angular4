@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DataBindingClassStyleComponent } from './data-binding/data-binding-class-style/data-binding-class-style.component';
+import { DataBindingInterpolationComponent } from './data-binding/data-binding-interpolation/data-binding-interpolation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
-    DataBindingClassStyleComponent
+    DataBindingClassStyleComponent,
+    DataBindingInterpolationComponent
   ],
   imports: [
     BrowserModule
