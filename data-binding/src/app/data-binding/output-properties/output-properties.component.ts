@@ -1,5 +1,4 @@
 import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
-import {init} from "protractor/built/launcher";
 
 @Component({
   selector: 'app-output-properties',
@@ -8,7 +7,7 @@ import {init} from "protractor/built/launcher";
 })
 export class OutputPropertiesComponent implements OnInit {
 
-  @Input('initalValue') value: number = 0;
+  @Input() value: number = 0;
 
   @Output() valueChanged = new EventEmitter();
 

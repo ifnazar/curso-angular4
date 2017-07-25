@@ -9,7 +9,7 @@ export class DataBindingInterpolationComponent implements OnInit {
 
   constructor() { }
 
-  url: string = "http://loaine.com";
+  url: string = 'http://loaine.com';
   cursoAngular: boolean = true;
 
   getCurtirCurso() {
