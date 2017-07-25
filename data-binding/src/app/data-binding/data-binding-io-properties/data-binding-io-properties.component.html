@@ -1,0 +1,15 @@
+<section class="input-output-properties">
+  <article>
+    <h3>Input/Output Properties</h3>
+
+    <app-input-properties [name]="courseName"></app-input-properties>
+
+    <app-output-properties [initalValue]="initialValue"></app-output-properties>
+
+    <app-output-properties initalValue="30"
+                           (valueChanged)="onValueChanged($event)">
+
+    </app-output-properties>
+
+  </article>
+</section>
