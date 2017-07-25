@@ -1,0 +1,24 @@
+<h3>Event Biding</h3>
+<div>
+  <button (click)="onClickButtonX1()">Click me</button>
+  <br/>
+  <br/>
+  <input type="text"
+         (keyup)="onKeyUp($event)"
+         (keyup.enter)="saveValue($event.target.value)"
+         (blur)="saveValue(fieldX1.value)"
+         #fieldX1>
+  <br/>
+  <p>Current Value: {{ currentValue }}</p>
+  <p>Saved Value: {{ savedValue }}</p>
+  <br/>
+  <br/>
+  <span
+    (mouseover)="onMouseOverOut(true)"
+    (mouseout)="onMouseOverOut(false)"
+    [class.highlight]="isMouseOver">
+    Mouse over
+  </span>
+  <br/>
+  <br/>
+</div>
