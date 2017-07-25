@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DataBindingClassStyleComponent } from './data-binding/data-binding-class-style/data-binding-class-style.component';
 import { DataBindingInterpolationComponent } from './data-binding/data-binding-interpolation/data-binding-interpolation.component';
 import { DataBindingEventComponent } from './data-binding/data-binding-event/data-binding-event.component';
+import { DataBindingTwoWayBindingComponent } from './data-binding/data-binding-two-way-binding/data-binding-two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { DataBindingEventComponent } from './data-binding/data-binding-event/dat
     DataBindingComponent,
     DataBindingClassStyleComponent,
     DataBindingInterpolationComponent,
-    DataBindingEventComponent
+    DataBindingEventComponent,
+    DataBindingTwoWayBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
