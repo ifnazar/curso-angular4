@@ -1,3 +1,37 @@
-<p>
-  difertiva-ngif works!
-</p>
+<h3> *ngIf </h3>
+<div *ngIf="cursos.length == 0">
+  Não existem cursos a serem listados.
+</div>
+<div *ngIf="cursos.length > 0">
+  Lista de cursos aqui
+</div>
+
+<br/>
+<hr/>
+<br/>
+
+<div *ngIf="!mostrarCursos">
+  Não existem cursos a serem listados.
+</div>
+<div *ngIf="mostrarCursos">
+  Lista de cursos aqui
+</div>
+<br/>
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+
+<br/>
+<hr/>
+
+<h5>Hidden como Alternativa</h5>
+<p>* A diretiva "ngIf" altera o dom, o que pode impactar na performance </p>
+<br/>
+<div  [hidden]="mostrarCursos">
+  Não existem cursos a serem listados.
+</div>
+<div  [hidden]="!mostrarCursos">
+  Lista de cursos aqui
+</div>
+<br/>
+<hr/>
+<br/>
+

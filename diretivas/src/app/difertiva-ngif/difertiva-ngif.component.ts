@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DifertivaNgifComponent implements OnInit {
 
+  cursos: string[] = ['Java', 'Angular'];
+
+  mostrarCursos: boolean;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onMostrarCursos() {
+    this.mostrarCursos = ! this.mostrarCursos;
   }
 
 }
