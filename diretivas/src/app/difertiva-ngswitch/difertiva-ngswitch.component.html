@@ -1,3 +1,23 @@
-<p>
-  difertiva-ngswitch works!
-</p>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link"
+       [class.active]="aba == 'home'"
+       (click)="aba = 'home'"
+    >Home</a>
+    <a class="nav-item nav-link"
+       [class.active]="aba == 'features'"
+       (click)="aba = 'features'"
+    >Features</a>
+    <a class="nav-item nav-link"
+       [class.active]="aba == 'pricing'"
+       (click)="aba = 'pricing'"
+    >Pricing</a>
+  </div>
+</nav>
+
+<div [ngSwitch]="aba">
+  <p *ngSwitchCase="'home'">HOME</p>
+  <p *ngSwitchCase="'features'">FEATURES</p>
+  <p *ngSwitchCase="'pricing'">PRICING</p>
+  <p *ngSwitchDefault>OPSSS</p>
+</div>
